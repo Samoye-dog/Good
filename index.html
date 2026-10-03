@@ -5305,11 +5305,11 @@ Events.EarthquakeEvent = {
     scenes: {
         start: {
             text: [
-                _('大地深处传来一声沉闷的巨响。'),
-                _('脚下的地面开始剧烈摇晃，尘土和碎石从屋顶簌簌落下。'),
-                _('村民们惊恐地冲出摇摇欲坠的房屋，尖叫声此起彼伏。')
+                _('大地深处传来一声沉闷的巨响.'),
+                _('脚下的地面开始剧烈摇晃，尘土和碎石从屋顶簌簌落下.'),
+                _('村民们惊恐地冲出摇摇欲坠的房屋，尖叫声此起彼伏.')
             ],
-            notification: _('地动山摇！'),
+            notification: _('地动山摇'),
             buttons: {
                 'reinforce': {
                     text: _('加固支撑'),
@@ -5350,12 +5350,12 @@ Events.EarthquakeEvent = {
                         Room.updateBuildButtons();
 
                         var resultText = [
-                            _('你带领村民用木桩顶住了主要梁柱。虽然损失惨重，但避免了最坏的情况。'),
+                            _('你带领村民用木桩顶住了主要梁柱.虽然损失惨重, 但避免了最坏的情况.'),
                             _('失去了 {0} 个小屋，{1} 个村民在地震中丧生。', lostHuts, killPop)
                         ];
                         if(woodLoss > 0) resultText.push(_('木材损失了 {0}。', woodLoss));
                         if(furLoss > 0) resultText.push(_('毛皮损失了 {0}。', furLoss));
-                        resultText.push(_('大地终于恢复了平静，幸存者们从废墟中缓缓爬出。'));
+                        resultText.push(_('大地终于恢复了平静, 幸存者们从废墟中缓缓爬出.'));
 
                         Events.EarthquakeEvent.scenes.aftermath.text = resultText;
                         Events.loadScene('aftermath');
@@ -5403,11 +5403,11 @@ Events.EarthquakeEvent = {
                         Room.updateBuildButtons();
 
                         var resultText = [
-                            _('你果断命令所有人撤到空地上。地震摧毁了部分建筑，但人员伤亡较少。'),
+                            _('你果断命令所有人撤到空地上.地震摧毁了部分建筑, 但人员伤亡较少.'),
                             _('失去了 {0} 个小屋，{1} 个村民受伤。', lostHuts, killPop)
                         ];
-                        if(foodLoss > 0) resultText.push(_('腊肉损失了 {0}。', foodLoss));
-                        resultText.push(_('混乱中大量食物和库存被掩埋或丢失。'));
+                        if(foodLoss > 0) resultText.push(_('腊肉损失了 {0}.', foodLoss));
+                        resultText.push(_('混乱中大量食物和库存被掩埋或丢失.'));
 
                         Events.EarthquakeEvent.scenes.aftermath.text = resultText;
                         Events.loadScene('aftermath');
@@ -5442,11 +5442,11 @@ Events.VolcanoEvent = {
     scenes: {
         start: {
             text: [
-                _('远方的地平线被一道赤红的光芒撕裂。'),
-                _('天空下起了灼热的灰烬雨，空气中弥漫着刺鼻的硫磺味。'),
-                _('火山正在喷发！滚烫的岩浆正顺着山坡向村庄流来！')
+                _('远方的地平线被一道赤红的光芒撕裂.'),
+                _('天空下起了灼热的灰烬雨，空气中弥漫着刺鼻的硫磺味.'),
+                _('火山正在喷发！滚烫的岩浆正顺着山坡向村庄流来.')
             ],
-            notification: _('炽热的灰烬！'),
+            notification: _('炽热的灰烬'),
             buttons: {
                 'dam': {
                     text: _('构筑堤坝'),
@@ -5483,12 +5483,12 @@ Events.VolcanoEvent = {
                         Room.updateBuildButtons();
 
                         var resultText = [
-                            _('你组织村民挖沟筑坝，勉强改变了岩浆流向。村庄免于被毁，但浓烟和毒气造成了伤亡。'),
-                            _('{0} 名村民因吸入毒气而死亡。', killPop)
+                            _('你组织村民挖沟筑坝, 勉强改变了岩浆流向.村庄免于被毁, 但浓烟和毒气造成了伤亡.'),
+                            _('{0} 名村民因吸入毒气而死亡.', killPop)
                         ];
                         if(steelLoss > 0) resultText.push(_('钢铁损失了 {0}。', steelLoss));
                         if(ironLoss > 0) resultText.push(_('铁损失了 {0}。', ironLoss));
-                        resultText.push(_('火山灰覆盖了一切，但村庄还在。'));
+                        resultText.push(_('火山灰覆盖了一切, 但村庄还在.'));
 
                         Events.VolcanoEvent.scenes.aftermath.text = resultText;
                         Events.loadScene('aftermath');
@@ -5523,12 +5523,12 @@ Events.VolcanoEvent = {
                         Room.updateBuildButtons();
 
                         var resultText = [
-                            _('你带着所有能带走的东西向反方向逃离。村庄被岩浆彻底吞没。'),
-                            _('所有小屋都被摧毁了。'),
-                            _('但在灰烬中，你意外找到了一些珍贵的外星合金和硫磺。')
+                            _('你带着所有能带走的东西向反方向逃离.村庄被岩浆彻底吞没.'),
+                            _('所有小屋都被摧毁了.'),
+                            _('但在灰烬中, 你意外找到了一些珍贵的外星合金和硫磺.')
                         ];
                         resultText.push(_('获得外星合金 x 5，硫磺 x 50。'));
-                        resultText.push(_('你望着被岩浆吞噬的家园，心中五味杂陈。'));
+                        resultText.push(_('你望着被岩浆吞噬的家园, 心中五味杂陈.'));
 
                         Events.VolcanoEvent.scenes.aftermath.text = resultText;
                         Events.loadScene('aftermath');
@@ -5783,7 +5783,6 @@ Events.DroughtEvent = {
                         var resultText = [
                             _('你派出侦察队外出寻找水源。他们带回了一个坏消息和一个好消息——'),
                             _('找到了一处绿洲，但途中遭遇了野兽袭击，{0} 名村民死亡。', killPop),
-                            _('获得水 x 100。'),
                             _('水的到来让所有人重新燃起了希望。')
                         ];
 
@@ -5820,9 +5819,9 @@ Events.TornadoEvent = {
     scenes: {
         start: {
             text: [
-                _('天色瞬间暗如深夜，一道漏斗状的乌云从天际垂下。'),
-                _('狂风发出刺耳的尖啸，将房屋的屋顶卷上高空。'),
-                _('龙卷风正在逼近！')
+                _('天色瞬间暗如深夜，一道漏斗状的乌云从天际垂下.'),
+                _('狂风发出刺耳的尖啸，将房屋的屋顶卷上高空.'),
+                _('龙卷风正在逼近.')
             ],
             notification: _('狂怒的风暴！'),
             buttons: {
