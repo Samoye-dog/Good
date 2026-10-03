@@ -7815,7 +7815,7 @@ var Room = {
                         name: _('stun baton'),
                         button: null,
                         type: 'weapon',
-                        buildMsg: _("两根铜线绕在铁管上, 尾端连着一块电池."),
+                        buildMsg: _("铜线缠上铁管, 尾端一块电池, 有细微的电流声"),
                         cost: function() {
                                 return {
                                         'steel': 50,
@@ -7828,7 +7828,7 @@ var Room = {
                         name: _('crossbow'),
                         button: null,
                         type: 'weapon',
-                        buildMsg: _("弓臂紧绷, 弦线在月光下反着冷光."),
+                        buildMsg: _("钢臂拉满, 弦绷得发白"),
                         cost: function() {
                                 return {
                                         'wood': 500,
@@ -7841,7 +7841,7 @@ var Room = {
                         name: _('flamethrower'),
                         button: null,
                         type: 'weapon',
-                        buildMsg: _("压缩罐与喷嘴相连, 泄露的瓦斯散发出刺鼻气味."),
+                        buildMsg: _("压缩罐接上喷嘴, 泄露的瓦斯散发出刺鼻气味."),
                         cost: function() {
                                 return {
                                         'steel': 200,
@@ -7855,7 +7855,7 @@ var Room = {
                         button: null,
                         type: 'upgrade',
                         maximum: 1,
-                        buildMsg: _("铁匣中夹着特殊的夹层, 暗藏着连环引爆的玄机."),
+                        buildMsg: _("夹层铁匣, 沉得压肩"),
                         cost: function() {
                                 return {
                                         'steel': 2000,
@@ -7868,7 +7868,7 @@ var Room = {
                         name: _('venom blade'),
                         button: null,
                         type: 'weapon',
-                        buildMsg: _("刀锋上涂抹了沼泽巨型蟾蜍的分泌物。那些野兽的毒腺，现在成了你的武器."),
+                        buildMsg: _("刀刃浸过沼泽的粘液, 泛着幽绿"),
                         cost: function() {
                                 return {
                                         'steel': 200,
@@ -20484,11 +20484,11 @@ var NewWeapons = {
 
     // 解锁台词 (显示在左边通知栏)
     MSGS: {
-        'stun baton': _('the builder wires copper coils around an iron pipe. says the beasts will dance before they drop'),
-        'crossbow': _('the builder stretches a bowstring across a steel frame. the moonlight glints on the new crossbow'),
-        'flamethrower': _('the builder hooks a compressed tank to a nozzle, and the air stings of gas'),
-        'reactive armour': _('the builder bolts layered plates into an iron case. it hums with hidden charges'),
-        'venom blade': _('the builder dips a blade into marsh venom. the edge gives off a sick green sheen')
+        'stun baton': _('建造者工具台上多了铜线和一块电池'),
+        'crossbow': _('建造者的房间角落里多了一张弓臂和一段弦'),
+        'flamethrower': _('一只压缩罐被推到墙角, 没人愿意靠近'),
+        'reactive armour': _('一叠發光的铁板堆在工具房门口'),
+        'venom blade': _('一小罐沼泽粘液, 用布蒙着')
     },
 
     _timer: null,
